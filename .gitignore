@@ -12,5 +12,8 @@
 !go.sum
 !go.mod
 
+# Python
+!*.py
+
 # ...even if they are in subdirectories
 !*/

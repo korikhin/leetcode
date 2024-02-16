@@ -1,3 +1,3 @@
-module "github.com/korikhin/leetcode"
+module leetcode
 
 go 1.22
