@@ -12,7 +12,7 @@ type ListNode struct {
 }
 
 func (n *ListNode) String() string {
-	v := make([]string, 0)
+	var v []string
 	for n != nil {
 		v = append(v, fmt.Sprint(n.Val))
 		n = n.Next
@@ -22,7 +22,7 @@ func (n *ListNode) String() string {
 
 func AddTwoNumbers(l1, l2 *ListNode) *ListNode {
 	carry := 0
-	dummy := &ListNode{Val: 0}
+	dummy := &ListNode{}
 
 	for head := dummy; l1 != nil || l2 != nil || carry > 0; head = head.Next {
 		if l1 != nil {
