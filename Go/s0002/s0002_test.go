@@ -103,7 +103,7 @@ func TestAddTwoNumbers(t *testing.T) {
 			result := AddTwoNumbers(l1, l2)
 			expected := newList(tt.expected)
 			if !listsEqual(result, expected) {
-				t.Errorf("Test '%s' failed: expected %s, got %s", tt.name, expected, result)
+				t.Errorf(`Test "%s" failed: expected %s, got %s`, tt.name, expected, result)
 			}
 		})
 	}
