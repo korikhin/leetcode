@@ -40,7 +40,7 @@ func newManacharsString(s string) string {
 	builder.WriteString("^")
 	for _, r := range s {
 		builder.WriteString("#")
-		builder.WriteString(string(r))
+		builder.WriteRune(r)
 	}
 	builder.WriteString("#$")
 	return builder.String()

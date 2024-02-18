@@ -2,6 +2,8 @@
 
 Given a string s, return the *longest palindromic substring* in `s`.
 
+<br>
+
 ### Example 1
 
 ```
@@ -16,6 +18,9 @@ Explanation: "aba" is also a valid answer
 Input: s = "cbbd"
 Output: "bb"
 ```
+
+<br>
+
 ### Constraints
 
 * `1 <= s.length <= 1000`
