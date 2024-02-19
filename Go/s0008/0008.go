@@ -14,28 +14,24 @@ func MyAtoi(s string) int {
 	}
 
 	// check the sign
-	if isNegative := s[i] == '-'; isNegative || s[i] == '+' {
-		if isNegative {
+	if s[i] == '-' || s[i] == '+' {
+		if s[i] == '-' {
 			sign = -1
 		}
 		i++
 	}
 
-	for i < n && s[i] >= '0' && s[i] <= '9' {
+	for ; i < n && s[i] >= '0' && s[i] <= '9'; i++ {
 		digit := int(s[i] - '0')
 
 		// check overflow before doing math
-		if sign > 1 {
-			if a > (math.MaxInt32-digit)/10 {
-				return math.MaxInt32
-			}
-		} else {
-			if -a < (math.MinInt32+digit)/10 {
-				return math.MinInt32
-			}
+		if sign > 0 && a > (math.MaxInt32-digit)/10 {
+			return math.MaxInt32
+		}
+		if sign < 0 && -a < (math.MinInt32+digit)/10 {
+			return math.MinInt32
 		}
 		a = a*10 + digit
-		i++
 	}
 
 	return a * sign

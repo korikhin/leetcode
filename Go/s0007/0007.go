@@ -4,13 +4,17 @@ import "math"
 
 func Reverse(x int) int {
 	r := 0
-	for y := abs(x); y > 0; {
-		r = 10*r + y%10
-		// hacky, but c'mon...
-		if r < math.MinInt32 || math.MaxInt32 < r {
+	for y := abs(x); y > 0; y /= 10 {
+		digit := y % 10
+
+		// check overflow before doing math
+		if x > 0 && r > (math.MaxInt32-digit)/10 {
 			return 0
 		}
-		y /= 10
+		if x < 0 && -r < (math.MinInt32+digit)/10 {
+			return 0
+		}
+		r = 10*r + digit
 	}
 
 	if x < 0 {
