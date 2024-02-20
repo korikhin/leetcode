@@ -1,18 +1,11 @@
 # Ignore everything
 *
 
-# General
-!/.gitignore
-
 !README.md
 !LICENSE
 
-# Go
+# Solutions
 !*.go
-!go.sum
-!go.mod
-
-# Python
 !*.py
 
 # ...even if they are in subdirectories
