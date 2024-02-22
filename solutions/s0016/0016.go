@@ -10,8 +10,12 @@ func abs(x int) int {
 }
 
 func ThreeSumClosest(nums []int, target int) int {
-	sort.Ints(nums)
 	n := len(nums)
+	if n < 3 {
+		return 0
+	}
+
+	sort.Ints(nums)
 	sumClosest := nums[0] + nums[1] + nums[2]
 
 	for i := 0; i < n-2; i++ {

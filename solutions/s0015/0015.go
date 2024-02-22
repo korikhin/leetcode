@@ -3,9 +3,13 @@ package main
 import "sort"
 
 func ThreeSum(nums []int) [][]int {
+	n := len(nums)
+	if n < 3 {
+		return nil
+	}
+
 	sort.Ints(nums)
 	result := [][]int{}
-	n := len(nums)
 
 	for i := 0; i < n-2; i++ {
 		// skip duplicates
