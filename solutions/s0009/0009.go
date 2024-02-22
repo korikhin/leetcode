@@ -2,6 +2,13 @@ package main
 
 import "math"
 
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
+
 func IsPalindrome(x int) bool {
 	if x < 0 {
 		return false
@@ -22,11 +29,4 @@ func IsPalindrome(x int) bool {
 	}
 
 	return x == a
-}
-
-func abs(x int) int {
-	if x < 0 {
-		return -x
-	}
-	return x
 }
