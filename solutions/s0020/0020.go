@@ -6,7 +6,7 @@ func IsValid(s string) bool {
 	}
 
 	pairs := map[rune]rune{')': '(', '}': '{', ']': '['}
-	var stack []rune
+	stack := make([]rune, 0, len(s)/2)
 
 	for _, r := range s {
 		if opening, ok := pairs[r]; ok {
