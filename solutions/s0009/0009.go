@@ -19,10 +19,7 @@ func IsPalindrome(x int) bool {
 		digit := y % 10
 
 		// Check overflow before doing math
-		if x > 0 && a > (math.MaxInt32-digit)/10 {
-			return false
-		}
-		if x < 0 && -a < (math.MinInt32+digit)/10 {
+		if a > (math.MaxInt32-digit)/10 {
 			return false
 		}
 		a = 10*a + digit

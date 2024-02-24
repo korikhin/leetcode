@@ -25,10 +25,10 @@ func MyAtoi(s string) int {
 		digit := int(s[i] - '0')
 
 		// Check overflow before doing math
-		if sign > 0 && a > (math.MaxInt32-digit)/10 {
-			return math.MaxInt32
-		}
-		if sign < 0 && -a < (math.MinInt32+digit)/10 {
+		if a > (math.MaxInt32-digit)/10 {
+			if sign > 0 {
+				return math.MaxInt32
+			}
 			return math.MinInt32
 		}
 		a = a*10 + digit
