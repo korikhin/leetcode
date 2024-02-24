@@ -19,7 +19,7 @@ func ThreeSumClosest(nums []int, target int) int {
 	sumClosest := nums[0] + nums[1] + nums[2]
 
 	for i := 0; i < n-2; i++ {
-		// skip duplicates
+		// Skip duplicates
 		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}

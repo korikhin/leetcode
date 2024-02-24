@@ -12,7 +12,7 @@ func ThreeSum(nums []int) [][]int {
 	result := [][]int{}
 
 	for i := 0; i < n-2; i++ {
-		// skip duplicates
+		// Skip duplicates
 		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}
@@ -22,7 +22,7 @@ func ThreeSum(nums []int) [][]int {
 			sum := nums[i] + nums[l] + nums[r]
 			if sum == 0 {
 				result = append(result, []int{nums[i], nums[l], nums[r]})
-				// skip duplicates
+				// Skip duplicates
 				for l < r && nums[l] == nums[l+1] {
 					l++
 				}

@@ -5,7 +5,7 @@ import "math"
 func MyAtoi(s string) int {
 	i, n, a, sign := 0, len(s), 0, 1
 
-	// ignore whitespaces
+	// Ignore whitespaces
 	for i < n && s[i] == ' ' {
 		i++
 	}
@@ -13,7 +13,7 @@ func MyAtoi(s string) int {
 		return 0
 	}
 
-	// check the sign
+	// Check the sign
 	if s[i] == '-' || s[i] == '+' {
 		if s[i] == '-' {
 			sign = -1
@@ -24,7 +24,7 @@ func MyAtoi(s string) int {
 	for ; i < n && s[i] >= '0' && s[i] <= '9'; i++ {
 		digit := int(s[i] - '0')
 
-		// check overflow before doing math
+		// Check overflow before doing math
 		if sign > 0 && a > (math.MaxInt32-digit)/10 {
 			return math.MaxInt32
 		}
