@@ -32,4 +32,4 @@ Output: 0
 ### Constraints
 
 * `0 <= s.length <= 3 * 10^4`
-* s[i] is `'('`, or `')'`.
+* `s[i]` is `'('`, or `')'`.
