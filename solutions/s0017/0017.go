@@ -18,7 +18,7 @@ func LetterCombinations(digits string) []string {
 
 	var (
 		a   []string
-		dfs func(c, next string)
+		dfs func(string, string)
 	)
 
 	dfs = func(c, next string) {

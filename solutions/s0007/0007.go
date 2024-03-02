@@ -15,10 +15,7 @@ func Reverse(x int) int {
 		digit := y % 10
 
 		// Check overflow before doing math
-		if x > 0 && r > (math.MaxInt32-digit)/10 {
-			return 0
-		}
-		if x < 0 && -r < (math.MinInt32+digit)/10 {
+		if r > (math.MaxInt32-digit)/10 {
 			return 0
 		}
 		r = 10*r + digit

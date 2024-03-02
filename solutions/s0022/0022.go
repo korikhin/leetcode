@@ -10,7 +10,7 @@ func GenerateParenthesis(n int) []string {
 
 		// Recursively constructs parentheses combinations by tracking
 		// the number of open (`opn`) and close (`cls`) brackets left to use.
-		dfs func(p string, opn, cls int)
+		dfs func(string, int, int)
 	)
 
 	dfs = func(p string, opn, cls int) {
