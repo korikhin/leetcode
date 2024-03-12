@@ -2,46 +2,54 @@ package main
 
 import "strings"
 
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+func prepare(s string) string {
+	var b strings.Builder
+	b.Grow(2*len(s) + 3)
+
+	b.WriteRune('^')
+	for _, r := range s {
+		b.WriteRune('#')
+		b.WriteRune(r)
+	}
+	b.WriteRune('#')
+	b.WriteRune('$')
+	return b.String()
+}
+
 // Manachar's Algorithm
 func LongestPalindrome(s string) string {
-	m := newManacharsString(s)
-	mLen := len(m)
-	mSlice := make([]int, mLen)
+	m := prepare(s)
+	P := make([]int, len(m))
 	r, c := 0, 0
 
-	for i := 1; i < mLen-1; i++ {
+	for i := 1; i < len(m)-1; i++ {
 		if r > i {
-			mSlice[i] = min(r-i, mSlice[2*c-i])
+			P[i] = min(r-i, P[2*c-i])
 		}
 
-		for m[i+1+mSlice[i]] == m[i-1-mSlice[i]] {
-			mSlice[i]++
+		for m[i+1+P[i]] == m[i-1-P[i]] {
+			P[i]++
 		}
 
-		if i+mSlice[i] > r {
-			c, r = i, i+mSlice[i]
+		if i+P[i] > r {
+			c, r = i, i+P[i]
 		}
 	}
 
 	var pCenter, pMax int
-	for i := 1; i < mLen-1; i++ {
-		if mSlice[i] > pMax {
-			pCenter, pMax = i, mSlice[i]
+	for i := 1; i < len(m)-1; i++ {
+		if P[i] > pMax {
+			pCenter, pMax = i, P[i]
 		}
 	}
 
-	return s[(pCenter-pMax)>>1 : (pCenter+pMax)>>1]
-}
-
-func newManacharsString(s string) string {
-	var builder strings.Builder
-	builder.Grow(len(s)*2 + 3)
-
-	builder.WriteString("^")
-	for _, r := range s {
-		builder.WriteString("#")
-		builder.WriteRune(r)
-	}
-	builder.WriteString("#$")
-	return builder.String()
+	start := (pCenter - pMax) / 2
+	return s[start : start+pMax]
 }

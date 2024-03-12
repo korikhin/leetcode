@@ -26,7 +26,7 @@ func SolveSudoku(board [][]byte) {
 		}
 	}
 
-	var solve func(n int) bool
+	var solve func(int) bool
 	solve = func(n int) bool {
 		if n == 81 {
 			return true
