@@ -5,9 +5,9 @@ func IsMatch(s string, p string) bool {
 	dp := make([]bool, n+1)
 	dp[0] = true
 
-	for i := 2; i <= n; i += 2 {
-		if p[i-1] == '*' {
-			dp[i] = dp[i-2]
+	for i := range p {
+		if p[i] == '*' {
+			dp[i+1] = dp[i]
 		}
 	}
 
@@ -18,9 +18,9 @@ func IsMatch(s string, p string) bool {
 		for j := 1; j <= n; j++ {
 			cur := dp[j]
 			if p[j-1] == '*' {
-				dp[j] = dp[j-2] || (dp[j] && (s[i-1] == p[j-2] || p[j-2] == '.'))
+				dp[j] = dp[j-1] || dp[j] || prev
 			} else {
-				dp[j] = prev && (s[i-1] == p[j-1] || p[j-1] == '.')
+				dp[j] = prev && (s[i-1] == p[j-1] || p[j-1] == '?')
 			}
 			prev = cur
 		}
