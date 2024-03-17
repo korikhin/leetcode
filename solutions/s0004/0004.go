@@ -3,39 +3,62 @@ package main
 import "math"
 
 func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
-	n, m := len(nums1), len(nums2)
-	if n < m {
-		return FindMedianSortedArrays(nums2, nums1)
+	if len(nums1) > len(nums2) {
+		nums1, nums2 = nums2, nums1
 	}
 
-	left, right := 0, m*2
+	m, n := len(nums1), len(nums2)
+	left, right := 0, m
+
 	for left <= right {
-		mid2 := (left + right) / 2
-		mid1 := n + m - mid2
+		partitionX := (left + right) / 2
+		partitionY := (m+n+1)/2 - partitionX
 
-		left1, left2 := math.Inf(-1), math.Inf(-1)
-		if mid1 != 0 {
-			left1 = float64(nums1[(mid1-1)/2])
-		}
-		if mid2 != 0 {
-			left2 = float64(nums2[(mid2-1)/2])
+		maxLeftX := math.Inf(-1)
+		if partitionX != 0 {
+			maxLeftX = float64(nums1[partitionX-1])
 		}
 
-		right1, right2 := math.Inf(1), math.Inf(1)
-		if mid1 != n*2 {
-			right1 = float64(nums1[mid1/2])
-		}
-		if mid2 != m*2 {
-			right2 = float64(nums2[mid2/2])
+		minRightX := math.Inf(1)
+		if partitionX != m {
+			minRightX = float64(nums1[partitionX])
 		}
 
-		if left1 > right2 {
-			left = mid2 + 1
-		} else if left2 > right1 {
-			right = mid2 - 1
+		maxLeftY := math.Inf(-1)
+		if partitionY != 0 {
+			maxLeftY = float64(nums2[partitionY-1])
+		}
+
+		minRightY := math.Inf(1)
+		if partitionY != n {
+			minRightY = float64(nums2[partitionY])
+		}
+
+		if maxLeftX <= minRightY && maxLeftY <= minRightX {
+			if (m+n)&1 == 0 {
+				return (max(maxLeftX, maxLeftY) + min(minRightX, minRightY)) / 2
+			}
+			return max(maxLeftX, maxLeftY)
+		} else if maxLeftX > minRightY {
+			right = partitionX - 1
 		} else {
-			return (max(left1, left2) + min(right1, right2)) / 2
+			left = partitionX + 1
 		}
 	}
-	return -1
+
+	return 0
+}
+
+func max(a, b float64) float64 {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func min(a, b float64) float64 {
+	if a < b {
+		return a
+	}
+	return b
 }
