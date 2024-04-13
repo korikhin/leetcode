@@ -14,10 +14,10 @@ func RomanToInt(s string) int {
 	a := romans[s[len(s)-1]]
 
 	for i := len(s) - 2; i >= 0; i-- {
-		if romans[s[i]] < romans[s[i+1]] {
-			a -= romans[s[i]]
+		if c := romans[s[i]]; c < romans[s[i+1]] {
+			a -= c
 		} else {
-			a += romans[s[i]]
+			a += c
 		}
 	}
 

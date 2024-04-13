@@ -19,16 +19,17 @@ func IntToRoman(num int) string {
 	var (
 		c int
 		m = num
-		r strings.Builder
+		b strings.Builder
 	)
 
-	for _, pair := range romans {
+	for _, r := range romans {
 		if m == 0 {
 			break
 		}
-		c, m = m/pair.Value, m%pair.Value
-		r.WriteString(strings.Repeat(pair.Symbol, c))
+		c = m / r.Value
+		m = m % r.Value
+		b.WriteString(strings.Repeat(r.Symbol, c))
 	}
 
-	return r.String()
+	return b.String()
 }
