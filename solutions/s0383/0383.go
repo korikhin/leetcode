@@ -1,7 +1,7 @@
 package main
 
 func CanConstruct(ransomNote string, magazine string) bool {
-	m := make(map[rune]int, 26 /* alphabet */)
+	m := make(map[rune]int, 26 /* English alphabet */)
 	for _, r := range magazine {
 		m[r]++
 	}
