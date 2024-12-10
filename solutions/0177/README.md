@@ -1,4 +1,4 @@
-##
+## 177. Nth Highest Salary
 
 Write a solution to find the n-th highest salary from the `Employee` table. If there is no n-th highest salary, return `null`.
 
@@ -14,7 +14,7 @@ Table: `Employee`
 | salary      | int  |
 +-------------+------+
 
-The id is the primary key (column with unique values) for this table.
+The id column is the primary key (column with unique values) for this table.
 Each row of this table contains information about the salary of an employee.
 ```
 

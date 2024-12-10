@@ -11,7 +11,7 @@ Table: `Person`
 | firstName   | varchar |
 +-------------+---------+
 
-personId is the primary key (column with unique values) for this table.
+The personId column is the primary key (column with unique values) for this table.
 This table contains information about the ID of some persons and their first and last names.
 ```
 
@@ -27,7 +27,7 @@ Table: `Address`
 | state       | varchar |
 +-------------+---------+
 
-addressId is the primary key (column with unique values) for this table.
+The addressId column is the primary key (column with unique values) for this table.
 Each row of this table contains information about the city and state of one person with ID = PersonId.
 ```
 
