@@ -1,6 +1,6 @@
 ## 32. Longest Valid Parentheses
 
-Given a string containing just the characters `'('` and `')'`, return *the length of the longest valid (well-formed) parentheses substring*.
+Given a string containing just the characters `'('` and `')'`, return _the length of the longest valid (well-formed) parentheses substring_.
 
 <br>
 
@@ -31,5 +31,5 @@ Output: 0
 
 ### Constraints
 
-* `0 <= s.length <= 3 * 10^4`
-* `s[i]` is `'('`, or `')'`.
+- $0 \leqslant$ `len(s)` $\leqslant 3 \cdot 10^4$
+- `s[i]` is `'('`, or `')'`.

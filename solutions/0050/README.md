@@ -30,8 +30,8 @@ Explanation: 2^-2 = 1/2^2 = 1/4 = 0.25
 
 ### Constraints
 
-* $-100.0 < x < 100.0$
-* $-2^{31} \leqslant n \leqslant 2^{31}-1$
-* `n` is an integer.
-* Either `x` is not zero or `n` $> 0$.
-* $-10^4 \leqslant x^n \leqslant 10^4$
+- $-100.0 <$ `x` $< 100.0$
+- $-2^{31} \leqslant$ `n` $\leqslant 2^{31} - 1$
+- `n` is an integer.
+- Either `x` is not zero or `n` $> 0$.
+- $-10^4 \leqslant x^n \leqslant 10^4$

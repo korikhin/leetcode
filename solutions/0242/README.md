@@ -24,9 +24,9 @@ Output: false
 
 ### Constraints
 
-- $1 \leqslant$ `s.length`, `t.length` $\leqslant 5 \cdot 10^4$
+- $1 \leqslant$ `len(s)`, `len(t)` $\leqslant 5 \cdot 10^4$
 - `s` and `t` consist of lowercase English letters.
 
 <br>
 
-\*_Follow up:_ What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+**Follow up:** What if the inputs contain Unicode characters? How would you adapt your solution to such a case?

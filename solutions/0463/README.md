@@ -34,8 +34,8 @@ Output: 4
 
 ### Constraints
 
-- `row == grid.length`
-- `col == grid[i].length`
-- $1 \leqslant$ `row, col` $\leqslant 100$
+- `row == len(grid)`
+- `col == len(grid[i])`
+- $1 \leqslant$ `row`, `col` $\leqslant 100$
 - `grid[i][j]` is `0` or `1`
 - There is exactly one island in `grid`

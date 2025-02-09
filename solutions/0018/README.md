@@ -1,10 +1,10 @@
 ## 18. 4Sum
 
-Given an array `nums` of `n` integers, return *an array of all the **unique** quadruplets* `[nums[a], nums[b], nums[c], nums[d]]` such that:
+Given an array `nums` of `n` integers, return _an array of all the **unique** quadruplets_ `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
-* `0 <= a, b, c, d < n`
-* `a`, `b`, `c`, and `d` are **distinct**.
-* `nums[a] + nums[b] + nums[c] + nums[d] == target`
+- $0 \leqslant$ `a`, `b`, `c`, `d` $<$ `n`
+- `a`, `b`, `c`, and `d` are **distinct**.
+- `nums[a] + nums[b] + nums[c] + nums[d] == target`
 
 You may return the answer in **any order**.
 
@@ -28,6 +28,6 @@ Output: [[2, 2, 2, 2]]
 
 ### Constraints
 
-* `1 <= nums.length <= 200`
-* `-10^9 <= nums[i] <= 10^9`
-* `-10^9 <= target <= 10^9`
+- $1 \leqslant$ `len(nums)` $\leqslant 200$
+- $-10^9 \leqslant$ `nums[i]` $\leqslant 10^9$
+- $-10^9 \leqslant$ `target` $\leqslant 10^9$

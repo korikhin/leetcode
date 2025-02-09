@@ -36,7 +36,7 @@ Explanation: The original array was [11, 13, 15, 17] and it was rotated 4 times.
 
 ### Constraints
 
-- `n == nums.length`
+- `n == len(nums)`
 - $1 \leqslant$ `n` $\leqslant 5000$
 - $-5000 \leqslant$ `nums[i]` $\leqslant 5000$
 - All the integers of `nums` are **unique.**

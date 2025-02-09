@@ -16,7 +16,7 @@ Output: true
 ### Example 2
 
 ```
-Input: p = [1, 2], q = [1, null, 2]
+Input: p = [1, 2], q = [1, nil, 2]
 Output: false
 ```
 
@@ -31,5 +31,5 @@ Output: false
 
 ### Constraints
 
-* The number of nodes in both trees is in the range $[0; 100]$.
-* $-10^4 \leqslant$ Node.val $\leqslant 10^4$
+- The number of nodes in both trees is in the range $[0; 100]$.
+- $-10^4 \leqslant$ `Node.Val` $\leqslant 10^4$

@@ -1,6 +1,6 @@
 ## 22. Generate Parentheses
 
-Given `n` pairs of parentheses, write a function to *generate all combinations of well-formed parentheses*.
+Given `n` pairs of parentheses, write a function to _generate all combinations of well-formed parentheses_.
 
 <br>
 
@@ -22,4 +22,4 @@ Output: ["()"]
 
 ### Constraints
 
-* `1 <= n <= 8`
+- $1 \leqslant$ `n` $\leqslant 8$

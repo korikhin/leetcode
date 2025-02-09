@@ -8,10 +8,8 @@ The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number o
     Y   I   R
 ```
 
-And then read line by line: `"PAHNAPLSIIGYIR"`  
-Write the code that will take a string and make this conversion given a number of rows:
-
-> string convert(string s, int numRows);
+And then read line by line: `"PAHNAPLSIIGYIR"`
+Write the code that will take a string and make this conversion given a number of rows.
 
 <br>
 
@@ -20,7 +18,6 @@ Write the code that will take a string and make this conversion given a number o
 ```
 Input: s = "PAYPALISHIRING", numRows = 3
 Output: "PAHNAPLSIIGYIR"
-Example 2:
 ```
 
 ### Example 2
@@ -47,6 +44,6 @@ Output: "A"
 
 ### Constraints
 
-* `1 <= s.length <= 1000`
-* `1 <= numRows <= 1000`
-* `s` consists of English letters (lower-case and upper-case), `','` and `'.'`
+- $1 \leqslant$ `len(s)` $\leqslant 1000$
+- $1 \leqslant$ `numRows` $\leqslant 1000$
+- `s` consists of English letters (lower-case and upper-case), `','` and `'.'`

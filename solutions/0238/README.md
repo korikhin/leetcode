@@ -26,7 +26,7 @@ Output: [0, 0, 9, 0, 0]
 
 ### Constraints
 
-- $2 \leqslant$ `nums.length` $\leqslant 10^5$
+- $2 \leqslant$ `len(nums)` $\leqslant 10^5$
 - $-30 \leqslant$ `nums[i]` $\leqslant 30$
 - The product of any prefix or suffix of `nums` is **guaranteed** to fit in a **32-bit** integer.
 

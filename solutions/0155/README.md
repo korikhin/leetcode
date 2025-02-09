@@ -17,15 +17,18 @@ You must implement a solution with $O(1)$ time complexity for each function.
 ### Example 1
 
 ```
-Input
+Input:
   ["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"]
   [[], [-2], [0], [-3], [], [], [], []]
 
-Output
-  [null, null, null, null, -3, null, 0, -2]
+Output:
+  [nil, nil, nil, nil, -3, nil, 0, -2]
 
-Explanation
-  MinStack minStack = Constructor()
+Explanation:
+```
+
+```go
+  minStack := Constructor()
   minStack.Push(-2)
   minStack.Push(0)
   minStack.Push(-3)
@@ -34,6 +37,8 @@ Explanation
   minStack.Top()    // return 0
   minStack.Min()    // return -2
 ```
+
+<br>
 
 ### Constraints
 

@@ -1,7 +1,7 @@
 ## 41. First Missing Positive
 
-Given an unsorted integer array `nums`. Return the *smallest positive integer that is not present in `nums`*.  
-  
+Given an unsorted integer array `nums`. Return the _smallest positive integer that is not present in `nums`_.
+
 You must implement an algorithm that runs in $O(n)$ time and uses $O(1)$ auxiliary space.
 
 <br>
@@ -34,5 +34,5 @@ Explanation: The smallest positive integer 1 is missing.
 
 ### Constraints
 
-* `1 <= nums.length <= 10^5`
-* `-2^31 <= nums[i] <= 23^1 - 1`
+- $1 \leqslant$ `len(nums)` $\leqslant 10^5$
+- $-2^{31} \leqslant$ `nums[i]` $\leqslant 2^{31} - 1$

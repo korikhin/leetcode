@@ -1,8 +1,8 @@
 ## 8. String to Integer (atoi)
 
-Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer (similar to C/C++'s `atoi` function).
+Implement the `myAtoi(s string) int` function, which converts a string to a 32-bit signed integer (similar to C/C++'s `atoi` function).
 
-The algorithm for `myAtoi(string s)` is as follows:
+The algorithm for `myAtoi(s string) int` is as follows:
 
 1. Read in and ignore any leading whitespace.
 2. Check if the next character (if not already at the end of the string) is `'-'` or `'+'`. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present.
@@ -23,15 +23,18 @@ Do not ignore any characters other than the leading whitespace or the rest of th
 ```
 Input: s = "42"
 Output: 42
-Explanation: The underlined characters are what is read in, the caret is the current reader position.
-Step 1: "42" (no characters read because there is no leading whitespace)
-         ^
-Step 2: "42" (no characters read because there is neither a '-' nor '+')
-         ^
-Step 3: "42" ("42" is read in)
+Explanation:
+  The underlined characters are what is read in, the caret is the current reader position.
+
+  Step 1: "42" (no characters read because there is no leading whitespace)
            ^
-The parsed integer is 42.
-Since 42 is in the range [-2^31, 2^31 - 1], the final result is 42.
+  Step 2: "42" (no characters read because there is neither a '-' nor '+')
+           ^
+  Step 3: "42" ("42" is read in)
+             ^
+
+  The parsed integer is 42.
+  Since 42 is in the range [-2^31; 2^31 - 1], the final result is 42.
 ```
 
 ### Example 2
@@ -40,14 +43,15 @@ Since 42 is in the range [-2^31, 2^31 - 1], the final result is 42.
 Input: s = "   -42"
 Output: -42
 Explanation:
-Step 1: "   -42" (leading whitespace is read and ignored)
-            ^
-Step 2: "   -42" ('-' is read, so the result should be negative)
-             ^
-Step 3: "   -42" ("42" is read in)
+  Step 1: "   -42" (leading whitespace is read and ignored)
+              ^
+  Step 2: "   -42" ('-' is read, so the result should be negative)
                ^
-The parsed integer is -42.
-Since -42 is in the range [-2^31, 2^31 - 1], the final result is -42.
+  Step 3: "   -42" ("42" is read in)
+                 ^
+
+  The parsed integer is -42.
+  Since -42 is in the range [-2^31; 2^31 - 1], the final result is -42.
 ```
 
 ### Example 3
@@ -56,19 +60,20 @@ Since -42 is in the range [-2^31, 2^31 - 1], the final result is -42.
 Input: s = "4193 with words"
 Output: 4193
 Explanation:
-Step 1: "4193 with words" (no characters read because there is no leading whitespace)
-         ^
-Step 2: "4193 with words" (no characters read because there is neither a '-' nor '+')
-         ^
-Step 3: "4193 with words" ("4193" is read in; reading stops because the next character is a non-digit)
-             ^
-The parsed integer is 4193.
-Since 4193 is in the range [-2^31, 2^31 - 1], the final result is 4193.
+  Step 1: "4193 with words" (no characters read because there is no leading whitespace)
+           ^
+  Step 2: "4193 with words" (no characters read because there is neither a '-' nor '+')
+           ^
+  Step 3: "4193 with words" ("4193" is read in; reading stops because the next character is a non-digit)
+               ^
+
+  The parsed integer is 4193.
+  Since 4193 is in the range [-2^31; 2^31 - 1], the final result is 4193.
 ```
 
 <br>
 
 ### Constraints
 
-* `0 <= s.length <= 200`
-* `s` consists of English letters (lower-case and upper-case), digits (`0-9`), `' '`, `'+'`, `'-'`, and `'.'`.
+- $0 \leqslant$ `len(s)` $\leqslant 200$
+- `s` consists of English letters (lower-case and upper-case), digits (`0-9`), `' '`, `'+'`, `'-'`, and `'.'`.

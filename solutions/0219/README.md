@@ -29,6 +29,6 @@ Output: false
 
 ### Constraints
 
-- $1 \leqslant$ `nums.length` $\leqslant 10^5$
+- $1 \leqslant$ `len(nums)` $\leqslant 10^5$
 - $-10^9 \leqslant$ `nums[i]` $\leqslant 10^9$
 - $0 \leqslant$ `k` $\leqslant 10^5$

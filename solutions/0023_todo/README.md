@@ -1,8 +1,8 @@
 ## 23. Merge k Sorted Lists
 
-You are given an array of `k` linked-lists `lists`, each linked-list is sorted in ascending order.  
-  
-*Merge all the linked-lists into one sorted linked-list and return it*.
+You are given an array of `k` linked-lists `lists`, each linked-list is sorted in ascending order.
+
+_Merge all the linked-lists into one sorted linked-list and return it_.
 
 <br>
 
@@ -42,9 +42,9 @@ Output: []
 
 ### Constraints
 
-* `k == lists.length`
-* `0 <= k <= 10^4`
-* `0 <= lists[i].length <= 500`
-* `-10^4 <= lists[i][j] <= 10^4`
-* `lists[i]` is sorted in **ascending order**.
-* The sum of `lists[i].length` will not exceed $10^4$.
+- `k == len(lists)`
+- $0 \leqslant$ `k` $\leqslant 10^4$
+- $0 \leqslant$ `len(lists[i])` $\leqslant 500$
+- $-10^4 \leqslant$ `lists[i][j]` $\leqslant 10^4$
+- `lists[i]` is sorted in **ascending order**.
+- The sum of `len(lists[i])` will not exceed $10^4$.

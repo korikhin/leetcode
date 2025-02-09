@@ -1,7 +1,7 @@
 ## 383. Ransom Note
 
-Given two strings `ransomNote` and `magazine`, return *`true` if `ransomNote` can be constructed by using the letters from `magazine` and `false` otherwise.*  
-  
+Given two strings `ransomNote` and `magazine`, return _`true` if `ransomNote` can be constructed by using the letters from `magazine` and `false` otherwise._
+
 Each letter in `magazine` can only be used once in `ransomNote`.
 
 <br>
@@ -27,7 +27,9 @@ Input: ransomNote = "aa", magazine = "aab"
 Output: true
 ```
 
+<br>
+
 ### Constraints
 
-* &1 \leqslant & `ransomNote.length`, `magazine.length` $ \leqslant 10^5 $
-* `ransomNote` and `magazine` consist of lowercase English letters.
+- $1 \leqslant$ `len(ransomNote)`, `len(magazine)` $\leqslant 10^5$
+- `ransomNote` and `magazine` consist of lowercase English letters.

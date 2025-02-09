@@ -1,6 +1,6 @@
 ## 121. Best Time to Buy and Sell Stock
 
-You are given an array `prices` where `prices[i]` is the price of a given stock on the i-th day.
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `i`-th day.
 
 You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.
 
@@ -30,5 +30,5 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 
 ### Constraints
 
-- $1 \leqslant$ `prices.length` $\leqslant 10^5$
+- $1 \leqslant$ `len(prices)` $\leqslant 10^5$
 - $0 \leqslant$ `prices[i]` $\leqslant 10^4$

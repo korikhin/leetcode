@@ -1,10 +1,10 @@
 ## 58. Length of Last Word
 
-Given a string `s` consisting of words and spaces, return *the length of the last word in the string*.
+Given a string `s` consisting of words and spaces, return _the length of the last word in the string_.
 
-A **word** is a maximal 
+A **word** is a maximal
 substring
- consisting of non-space characters only.
+consisting of non-space characters only.
 
 <br>
 
@@ -31,10 +31,11 @@ Input: s = "luffy is still joyboy"
 Output: 6
 Explanation: The last word is "joyboy" with length 6.
 ```
+
 <br>
 
 ### Constraints
 
-* $1 \leqslant$ `s.length` $\leqslant 10^4$
-* `s` consists of only English letters and spaces `' '`.
-* There will be at least one word in `s`.
+- $1 \leqslant$ `len(s)` $\leqslant 10^4$
+- `s` consists of only English letters and spaces `' '`.
+- There will be at least one word in `s`.

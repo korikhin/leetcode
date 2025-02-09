@@ -1,6 +1,6 @@
 ## 5. Longest Palindromic Substring
 
-Given a string s, return the *longest palindromic substring* in `s`.
+Given a string `s`, return the _longest palindromic substring_ in `s`.
 
 <br>
 
@@ -23,8 +23,8 @@ Output: "bb"
 
 ### Constraints
 
-* `1 <= s.length <= 1000`
-* `s` consist of only digits and English letters
+- $1 \leqslant$ `len(s)` $\leqslant 1000$
+- `s` consist of only digits and English letters.
 
 ## Extra
 

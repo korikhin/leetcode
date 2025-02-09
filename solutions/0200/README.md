@@ -36,7 +36,7 @@ Output: 3
 
 ### Constraints
 
-- `m == grid.length`
-- `n == grid[i].length`
+- `m == len(grid)`
+- `n == len(grid[i])`
 - $1 \leqslant$ `m`, `n` $\leqslant 300$
 - `grid[i][j]` is `'0'` or `'1'`.

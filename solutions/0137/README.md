@@ -1,7 +1,7 @@
 ## 137. Single Number II
 
-Given an integer array `nums` where every element appears **three times** except for one, which appears **exactly once**. *Find the single element and return it*.  
-  
+Given an integer array `nums` where every element appears **three times** except for one, which appears **exactly once**. _Find the single element and return it_.
+
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 <br>
@@ -24,6 +24,6 @@ Output: 99
 
 ### Constraints
 
-* $1 \leqslant$ `nums.length` $\leqslant 3 \cdot 10^4$
-* $-2^{31} \leqslant$ `nums[i]` $\leqslant 2^{31} - 1$
-* Each element in `nums` appears exactly **three times** except for one element which appears **once**.
+- $1 \leqslant$ `len(nums)` $\leqslant 3 \cdot 10^4$
+- $-2^{31} \leqslant$ `nums[i]` $\leqslant 2^{31} - 1$
+- Each element in `nums` appears exactly **three times** except for one element which appears **once**.

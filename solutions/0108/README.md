@@ -8,8 +8,8 @@ Given an integer array `nums` where the elements are sorted in **ascending order
 
 ```
 Input: nums = [-10, -3, 0, 5, 9]
-Output: [0, -3, 9, -10, null, 5]
-Explanation: [0, -10, 5, null, -3, null, 9] is also accepted:
+Output: [0, -3, 9, -10, nil, 5]
+Explanation: [0, -10, 5, nil, -3, nil, 9] is also accepted:
 ```
 
 ### Example 2
@@ -17,13 +17,13 @@ Explanation: [0, -10, 5, null, -3, null, 9] is also accepted:
 ```
 Input: nums = [1, 3]
 Output: [3, 1]
-Explanation: [1, null, 3] and [3, 1] are both height-balanced BSTs.
+Explanation: [1, nil, 3] and [3, 1] are both height-balanced BSTs.
 ```
 
 <br>
 
 ### Constraints
 
-- $1 \leqslant$ `nums.length` $\leqslant 10^4$
+- $1 \leqslant$ `len(nums)` $\leqslant 10^4$
 - $-10^4 \leqslant$ `nums[i]` $\leqslant 10^4$
 - `nums` is sorted in a **strictly increasing order.**

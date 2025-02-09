@@ -32,6 +32,8 @@ Input: n = 2
 Output: false
 ```
 
+<br>
+
 ### Constraints
 
-- $1 \leqslant$ `n` $<= 2^{31} - 1$
+- $1 \leqslant$ `n` $\leqslant 2^{31} - 1$
