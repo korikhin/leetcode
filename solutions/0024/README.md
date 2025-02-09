@@ -30,4 +30,4 @@ Output: [1]
 ### Constraints
 
 - The number of nodes in the list is in the range $[0; 100]$.
-- $0 \leqslant$ `Node.Val` $\leqslant 100$
+- $0 \leqslant$ `ListNode.Val` $\leqslant 100$

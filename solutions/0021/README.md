@@ -33,6 +33,6 @@ Output: [0]
 
 ### Constraints
 
-- $-100 \leqslant$ `Node.Val` $\leqslant 100$
+- $-100 \leqslant$ `ListNode.Val` $\leqslant 100$
 - The number of nodes in both lists is in the range $[0; 50]$.
 - Both `list1` and `list2` are sorted in **non-decreasing** order.

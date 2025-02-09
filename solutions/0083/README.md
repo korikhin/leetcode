@@ -21,5 +21,5 @@ Output: [1, 2, 3]
 ### Constraints
 
 - The number of nodes in the list is in the range $[0; 300]$.
-- $-100 \leqslant$ `Node.Val` $\leqslant 100$
+- $-100 \leqslant$ `ListNode.Val` $\leqslant 100$
 - The list is guaranteed to be **sorted** in ascending order.

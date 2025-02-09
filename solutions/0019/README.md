@@ -31,4 +31,4 @@ Output: [1]
 
 - The number of nodes in the list is `sz`.
 - $1 \leqslant$ `n` $\leqslant$ `sz` $\leqslant 30$
-- $0 \leqslant$ `Node.Val` $\leqslant 100$
+- $0 \leqslant$ `ListNode.Val` $\leqslant 100$

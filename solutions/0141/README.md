@@ -17,7 +17,7 @@ See on LeetCode.
 ### Constraints
 
 - The number of the nodes in the list is in the range $[0; 10^4]$.
-- $-10^5 \leqslant$ `Node.Val` $\leqslant 10^5$
+- $-10^5 \leqslant$ `ListNode.Val` $\leqslant 10^5$
 
 <br>
 

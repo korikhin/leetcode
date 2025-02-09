@@ -23,5 +23,5 @@ Output: [2, 0, 1]
 ### Constraints
 
 - The number of nodes in the list is in the range $[0; 500]$.
-- $-100 \leqslant$ `Node.Val` $\leqslant 100$
+- $-100 \leqslant$ `ListNode.Val` $\leqslant 100$
 - $0 \leqslant$ `k` $\leqslant 2 \cdot 10^9$
