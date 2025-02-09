@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# General
+!/.gitignore
+
+!README.md
+!LICENSE
+
+# Go
+!*.go
+!go.sum
+!go.mod
+
+# ...even if they are in subdirectories
+!*/
